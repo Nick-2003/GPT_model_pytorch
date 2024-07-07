@@ -81,4 +81,4 @@ class WineDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx: int) -> tuple[torch.Tensor, torch.Tensor]:
         text = self.train_dataset[idx]
-        return torch.Tensor(text[:-1]), torch.Tensor(text[1:])
+        return torch.IntTensor(text[:-1]), torch.IntTensor(text[1:])
