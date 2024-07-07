@@ -47,27 +47,27 @@ class WineDataset(torch.utils.data.Dataset):
         text = re.sub(f"([{string.punctuation}, '\n'])", r" \1 ", text)
         # Replace a sequence of spaces with a space
         text = re.sub(" +", " ", text)
-        text = text.lower().split()
-        return text
+        text_list = text.lower().split()
+        return text_list
 
-    def create_vocab(self, texts: list[list[str]]) -> dict[int, str]:
+    def create_vocab(self, texts: list[list[str]]) -> dict[str, int]:
         """Create a vocab from the dataset."""
         counter = Counter(token for tokens in texts for token in tokens)
-        counter = dict(
+        counter_sorted = dict(
             sorted(counter.items(), key=lambda item: item[1], reverse=True)
         )
-        vocab = [word for (word, _) in counter.items()]
+        vocab = [word for (word, _) in counter_sorted.items()]
         vocab.insert(0, "")
         vocab.insert(1, "<unk>")
         vocab = vocab[: self.vocab_size]
-        vocab = {word: idx for idx, word in enumerate(vocab)}
-        return vocab
+        vocab_dict = {word: idx for idx, word in enumerate(vocab)}
+        return vocab_dict
 
-    def get_vocab(self) -> dict[int, str]:
+    def get_vocab(self) -> dict[str, int]:
         """Return the vocab."""
         return self.vocab
 
-    def prepare_inputs(self, text: str) -> list[int]:
+    def prepare_inputs(self, text: list[str]) -> list[int]:
         """Tokenize the text."""
         tokenized_text = [self.vocab.get(word, 1) for word in text]
         if len(tokenized_text) >= self.max_length:
