@@ -35,7 +35,7 @@ def generate_text(
             )
             start_tokens.append(sample_token)
             start_prompt += f" {vocab_words[sample_token]}"
-        return f"\ngenerated text:\n{start_prompt}\n"
+        return f"\nGenerated text:\n{start_prompt}\n"
 
 
 def train_network(
@@ -64,7 +64,7 @@ def train_network(
             train_loss.append(loss.item())
         model.eval()
         print(f"Epoch: {epoch}, Training Loss: {np.mean(train_loss):.4f}")
-        generate_text(
+        generated_text = generate_text(
             model,
             "wine review",
             max_tokens=80,
@@ -72,3 +72,4 @@ def train_network(
             vocab=vocab,
             device=device,
         )
+        print(generated_text)
