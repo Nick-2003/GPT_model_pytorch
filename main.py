@@ -1,8 +1,10 @@
 from pathlib import Path
-from model import GPTModel
-import torch
-from dataset import WineDataset
+
 import pytorch_model_summary as pms
+import torch
+
+from dataset import WineDataset
+from model import GPTModel
 
 VOCAB_SIZE = 10000
 MAX_LEN = 80
@@ -26,7 +28,14 @@ trainloader = torch.utils.data.DataLoader(
     wine_dataset, batch_size=BATCH_SIZE, shuffle=True
 )
 
-model = GPTModel(max_len_input=MAX_LEN, vocab_size=VOCAB_SIZE, embed_dim=EMBEDDING_DIM, feed_forward_dim=FEED_FORWARD_DIM, num_heads=N_HEADS, key_dim=KEY_DIM)
+model = GPTModel(
+    max_len_input=MAX_LEN,
+    vocab_size=VOCAB_SIZE,
+    embed_dim=EMBEDDING_DIM,
+    feed_forward_dim=FEED_FORWARD_DIM,
+    num_heads=N_HEADS,
+    key_dim=KEY_DIM,
+)
 model.to(device)
 pms.summary(
     model,
@@ -36,4 +45,3 @@ pms.summary(
     max_depth=5,
     show_parent_layers=True,
 )
-
