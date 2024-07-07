@@ -1,5 +1,7 @@
-import torch
 from pathlib import Path
+
+import torch
+
 from dataset import WineDataset
 
 VOCAB_SIZE = 10000
@@ -12,7 +14,13 @@ BATCH_SIZE = 32
 EPOCHS = 20
 
 
-wine_dataset = WineDataset(path_to_file=Path("data/wine-reviews/winemag-data-130k-v2.json"), max_length=MAX_LEN, vocab_size=VOCAB_SIZE)
+wine_dataset = WineDataset(
+    path_to_file=Path("data/wine-reviews/winemag-data-130k-v2.json"),
+    max_length=MAX_LEN,
+    vocab_size=VOCAB_SIZE,
+)
 vocab = wine_dataset.get_vocab()
 
-trainloader = torch.utils.data.DataLoader(wine_dataset, batch_size=BATCH_SIZE, shuffle=True)
+trainloader = torch.utils.data.DataLoader(
+    wine_dataset, batch_size=BATCH_SIZE, shuffle=True
+)
