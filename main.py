@@ -5,6 +5,7 @@ import torch
 
 from dataset import WineDataset
 from model import GPTModel
+from train import train_network
 
 VOCAB_SIZE = 10000
 MAX_LEN = 80
@@ -44,4 +45,19 @@ pms.summary(
     print_summary=True,
     max_depth=5,
     show_parent_layers=True,
+)
+
+optimizer = torch.optim.Adam(
+    params=filter(lambda param: param.requires_grad, model.parameters()),
+    lr=0.001,
+)
+
+train_network(
+    model=model,
+    vocab=vocab,
+    num_epochs=EPOCHS,
+    optimizer=optimizer,
+    loss_function=torch.nn.CrossEntropyLoss(),
+    trainloader=trainloader,
+    device=device,
 )

@@ -15,7 +15,7 @@ class WineDataset(torch.utils.data.Dataset):
     ):
         """Init variables."""
         super().__init__()
-        self.max_length = max_length
+        self.max_length = max_length + 1
         self.vocab_size = vocab_size
 
         with open(path_to_file, encoding="utf-8") as json_file:
@@ -81,4 +81,4 @@ class WineDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx: int) -> tuple[torch.Tensor, torch.Tensor]:
         text = self.train_dataset[idx]
-        return torch.IntTensor(text[:-1]), torch.IntTensor(text[1:])
+        return torch.LongTensor(text[:-1]), torch.LongTensor(text[1:])
