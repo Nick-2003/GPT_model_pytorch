@@ -49,8 +49,8 @@ def train_network(
 ) -> None:
     """Train the Network."""
     print("Training Started")
-    sys.stdout.flush()
     for epoch in range(1, num_epochs + 1):
+        sys.stdout.flush()
         train_loss = []
         model.train()
         for batch in trainloader:

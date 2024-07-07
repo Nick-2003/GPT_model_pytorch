@@ -5,7 +5,7 @@ import torch
 
 from dataset import WineDataset
 from model import GPTModel
-from train import train_network
+from train import generate_text, train_network
 
 VOCAB_SIZE = 10000
 MAX_LEN = 80
@@ -13,7 +13,7 @@ EMBEDDING_DIM = 256
 KEY_DIM = 256
 N_HEADS = 2
 FEED_FORWARD_DIM = 256
-BATCH_SIZE = 32
+BATCH_SIZE = 128
 EPOCHS = 20
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -60,4 +60,38 @@ train_network(
     loss_function=torch.nn.CrossEntropyLoss(),
     trainloader=trainloader,
     device=device,
+)
+
+
+print(
+    generate_text(
+        model,
+        "wine review : us",
+        max_tokens=80,
+        temp=1.0,
+        vocab=vocab,
+        device=device,
+    )
+)
+
+print(
+    generate_text(
+        model,
+        "wine review : italy",
+        max_tokens=80,
+        temp=0.5,
+        vocab=vocab,
+        device=device,
+    )
+)
+
+print(
+    generate_text(
+        model,
+        "wine review : germany",
+        max_tokens=80,
+        temp=0.5,
+        vocab=vocab,
+        device=device,
+    )
 )
