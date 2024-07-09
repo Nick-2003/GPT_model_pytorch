@@ -14,7 +14,7 @@ KEY_DIM = 256
 N_HEADS = 2
 FEED_FORWARD_DIM = 256
 BATCH_SIZE = 128
-EPOCHS = 20
+EPOCHS = 300
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
