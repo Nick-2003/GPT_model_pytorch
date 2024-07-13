@@ -13,11 +13,11 @@ def create_attention_mask(
     Create a Casual Mask for
     the multi head attention layer.
     """
-    i = torch.arange(key_length)[:, None]
-    j = torch.arange(query_length)
-    # Create a mask of size (key_length, query_length)
-    # (i, j) is true if i >= j - query_length + key_length
-    mask = i >= j - query_length + key_length
+    i = torch.arange(query_length)[:, None]
+    j = torch.arange(key_length)
+    # Create a mask of size (query_length, key_length)
+    # (i, j) is true if i >= j - key_length + query_length
+    mask = i >= j - key_length + key_length
     # Cast the mask to the dtype
     mask = torch.logical_not(mask)
     mask = mask.to(dtype)
