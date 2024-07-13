@@ -4,7 +4,7 @@ Implements a GPT Model in PyTorch on the Wine Reviews Dataset: https://www.kaggl
 
 Further information can be found in the following blog post:
 
-
+https://nathanbaileyw.medium.com/implementing-a-gpt-model-in-pytorch-15fd3f5d77ed
 
 ### Code:
 The main code is located in the following files:
