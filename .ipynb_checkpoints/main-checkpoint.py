@@ -2,7 +2,6 @@ from pathlib import Path
 
 import pytorch_model_summary as pms
 import torch
-import os
 
 from dataset import WineDataset
 from model import GPTModel
@@ -15,7 +14,7 @@ KEY_DIM = 256
 N_HEADS = 2
 FEED_FORWARD_DIM = 256
 BATCH_SIZE = 128
-EPOCHS = 100 # Initially 300
+EPOCHS = 300
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -63,34 +62,6 @@ train_network(
     device=device,
 )
 
-def save_model_with_fallback(model, filename='name.pth'):
-    """
-    Save model with fallback locations for different environments
-    """
-    save_paths = [
-        filename,  # Current directory (works in local environments)
-        f'/kaggle/working/{filename}',  # Kaggle notebooks
-        f'/tmp/{filename}',  # Temporary directory fallback
-    ]
-    
-    for path in save_paths:
-        try:
-            # Create directory if it doesn't exist
-            os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-            torch.save(model, path)
-            print(f"Model saved successfully to '{path}'")
-            return path
-        except (RuntimeError, OSError, PermissionError) as e:
-            print(f"Failed to save to '{path}': {e}")
-            continue
-    
-    raise RuntimeError("Could not save model to any location")
-
-# Usage
-try:
-    saved_path = save_model_with_fallback(model, 'name.pth')
-except RuntimeError as e:
-    print(f"Error: {e}")
 
 print(
     generate_text(
