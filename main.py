@@ -8,14 +8,15 @@ from dataset import WineDataset
 from model import GPTModel
 from train import generate_text, train_network
 
-VOCAB_SIZE = 10000
-MAX_LEN = 80
-EMBEDDING_DIM = 256
-KEY_DIM = 256
-N_HEADS = 2
-FEED_FORWARD_DIM = 256
-BATCH_SIZE = 128
+VOCAB_SIZE = 10000 # Size of your vocabulary (number of unique words/tokens the model can understand)
+MAX_LEN = 80 # Maximum sequence length the model can process at once; determines context window size
+EMBEDDING_DIM = 256 # Dimensionality of the word embeddings as vector
+KEY_DIM = 256 # Dimension of the key vectors in the attention mechanism
+N_HEADS = 2 # Number of attention heads in the multi-head attention mechanism
+FEED_FORWARD_DIM = 256 # Hidden layer size in the feed-forward network within each transformer block; typically larger than the embedding dimension to provide more representational capacity
+BATCH_SIZE = 128 # How many sequences are processed together in each training step
 EPOCHS = 100 # Initially 300
+LEARNING_RATE = 0.00001 # Learning rate; initially 0.0001
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -50,7 +51,7 @@ pms.summary(
 
 optimizer = torch.optim.Adam(
     params=filter(lambda param: param.requires_grad, model.parameters()),
-    lr=0.001,
+    lr=LEARNING_RATE, # Learning rate
 )
 
 train_network(

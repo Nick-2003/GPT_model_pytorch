@@ -1,0 +1,531 @@
+-------------------------------------------------------------------------------------------------------------
+                        Parent Layers       Layer (type)         Output Shape         Param #     Tr. Param #
+=============================================================================================================
+   GPTModel/TokenAndPositionEmbedding        Embedding-1            [80, 256]          20,480          20,480
+   GPTModel/TokenAndPositionEmbedding        Embedding-2       [128, 80, 256]       2,560,000       2,560,000
+            GPTModel/TransformerBlock          Dropout-3       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock        LayerNorm-4       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock           Linear-5       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock           Linear-6       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Dropout-7       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock        LayerNorm-8       [128, 80, 256]             512             512
+                             GPTModel           Linear-9     [128, 80, 10000]       2,570,000       2,570,000
+=============================================================================================================
+Total params: 5,283,088
+Trainable params: 5,283,088
+Non-trainable params: 0
+-------------------------------------------------------------------------------------------------------------
+Training Started
+Epoch: 1, Training Loss: 2.7163
+
+Generated text:
+wine review : us : california : petite sirah : bright and elegantly harsh in body , this variety is absolutely monte merlot , with a slightly raspberry - flavored meal . it tastes like smooth and rich blackberries , floral and blueberry , creamy raspberry and rhubarb and clove . 
+
+Epoch: 2, Training Loss: 2.1853
+
+Generated text:
+wine review : canada : british columbia : cabernet sauvignon : this rich but generally complex if any lineup of the 2008 pinot grigio remains typical for 10 % varietal character , and cabernet franc . barely accessible , expressed and for a couple of years , with flavors of notes adding long time to <unk> years . drink from 2017 . 
+
+Epoch: 3, Training Loss: 2.0619
+
+Generated text:
+wine review : spain : northern spain : tempranillo : warm and raw , familiar aromas are plump and unsettled . this full - bodied wine feels chunky and tasting . flavors of sour berry fruits fade throughout . 
+
+Epoch: 4, Training Loss: 1.9960
+
+Generated text:
+wine review : us : california : cabernet sauvignon : reduced takes 16 % two miles in the cool , ripe fruit , <unk> the rich , fruity style of cab . it ' s strong like acidity shows a hard , stringy solidity with a stretched , exotic and lengthy finish . 
+
+Epoch: 5, Training Loss: 1.9530
+
+Generated text:
+wine review : us : oregon : pinot noir : freedom hill ' s 2012 , this pinot is the winery ' s wine is a little obtrusive , though dilute , entirely dijon clone , with sugary toast and nicely long - lasting current . perhaps the more bottle will be stretching , its complex origins and early . —p . g . 
+
+Epoch: 6, Training Loss: 1.9214
+
+Generated text:
+wine review : us : california : bordeaux - style red blend : this wine is dry and locked - for everyday fare . the aromas resemble roasted campfire , mission figs , teriyaki and eucalyptus flavors are a hit of smoky oak and very ripe . satisfyingly to finish is moderate in texture that bodes well for its development . 
+
+Epoch: 7, Training Loss: 1.8968
+
+Generated text:
+wine review : portugal : douro : portuguese white : this is a soft wine , with ripe white fruits . it is creamy and it is a fine example of a cool white , with vanilla - fruit flavors . it is fresh and lightly perfumed with fine apple and mineral that is ready to drink . 
+
+Epoch: 8, Training Loss: 1.8773
+
+Generated text:
+wine review : germany : mosel : riesling : the - nysa way initially ' s riesling is particularly <unk> <unk> , and winemaker anthony nappa , with gorgeous shades of honey and bramble intensity . there are enticing hints of tea and slaty mineral on this dry riesling . it ' s refreshingly zesty and refreshing , yet steely , yet buoyant in feel . 
+
+Epoch: 9, Training Loss: 1.8605
+
+Generated text:
+wine review : us : california : zinfandel : with the <unk> vineyard in the old . air is dry , this is a rustic , dry , high in alcohol , in flavors that are rich , although the wine is high in acidity and a dry tannin - acid structure . it needs the dish will show its elegance . 
+
+Epoch: 10, Training Loss: 1.8461
+
+Generated text:
+wine review : austria : niederösterreich : grüner veltliner : the slender nose wine , with a fresh , lemony freshness . more light and zesty lemon freshness arrives . 
+
+Epoch: 11, Training Loss: 1.8335
+
+Generated text:
+wine review : france : burgundy : chardonnay : a great example of selection . ripe and full of tropical fruits , with lots of toast , toast and barrel fermentation are integrating well properly creamy , carrying through to the richness . opulent and opulent wine , this should age beyond . drink from 2019 . 
+
+Epoch: 12, Training Loss: 1.8227
+
+Generated text:
+wine review : us : california : pinot noir : sanguine from the cellar to add to the aromas , this has a juiciness and no oak influence . 
+
+Epoch: 13, Training Loss: 1.8124
+
+Generated text:
+wine review : us : new york : grüner veltliner : wiemer ' s <unk> franc , savory aromas of pressed spring flowers and apricots waft from this 2013 . it ' s refreshing and spry , with lingering hints of desiccated spice , dried apricot and yellow fruit . drink now through 2017 . 
+
+Epoch: 14, Training Loss: 1.8035
+
+Generated text:
+wine review : us : california : syrah : a highly tannic syrah for its luxurious , stinging deep color , this ripe , brawny wine has flavors of blueberries , blackberry jam and blueberry , chocolate and soft richness . but it stops it for hearty winter , or like a syrup or dark chocolate , tastes chocolaty and ripe . although it is opulent on the long finish . drink it <unk> . 
+
+Epoch: 15, Training Loss: 1.7951
+
+Generated text:
+wine review : italy : tuscany : red blend : made with 80 % merlot and 10 % cabernet sauvignon , this offers aromas of black plum , underbrush , mint and violet . the juicy palate doles out juicy morello cherry , raspberry and cinnamon alongside fresh acidity and an almost black - cherry note . the firm , refined tannins provide an anise note . drink after 2019 . 
+
+Epoch: 16, Training Loss: 1.7874
+
+Generated text:
+wine review : us : california : barbera : this is a young wine , light with aromas of strawberry , wet green olive and sweet dried note . the palate is fresh with a fruit flavor to match with tobacco and dried herbs that <unk> of black pepper add juiciness to the nose . 
+
+Epoch: 17, Training Loss: 1.7804
+
+Generated text:
+wine review : france : loire valley : sauvignon blanc : as just off that the bourgeois <unk> vineyards of sancerre , this wine were made from old vines have produced a richly fruity sauvignon blanc . it has citrus and green grapes , is more than in the crisp texture . drink this this too different style of sauvignon blanc . 
+
+Epoch: 18, Training Loss: 1.7740
+
+Generated text:
+wine review : new zealand : marlborough : sauvignon blanc : this is as surprisingly supple , with a broad palate loaded with black - currant and grapefruit flavors . citrus and stone fruit combine on the complicated , with a bit of charred oak overtones and finishes on a silky texture . 
+
+Epoch: 19, Training Loss: 1.7678
+
+Generated text:
+wine review : us : california : syrah : dark and concentrated , this big , lush syrah ' s hearty black wine shows a concentrated violets - like sichuan pepper , dark , dense tannins and a thick finish . but you ' ll also get layered flavors of white pepper , blackberry and black currant notes . 
+
+Epoch: 20, Training Loss: 1.7621
+
+Generated text:
+wine review : us : california : pinot noir : this wine has a touch of reduction that ' s just shy about one year . brooding and inviting , it ' s balanced and supple , the vineyard ' s best by <unk> hallmarks of an appetizing texture , with lemon - lime acidity . 
+
+Epoch: 21, Training Loss: 1.7566
+
+Generated text:
+wine review : france : alsace : pinot blanc : a soft , rounded wine that shows both freshness and freshest acidity at the core of green fruits . it ' s a wine with noticeable acidity , just a touch of character . 
+
+Epoch: 22, Training Loss: 1.7514
+
+Generated text:
+wine review : us : oregon : pinot noir : made from the dijon clone , this cuvée of almost three - quarters fruit , this terrific wine is focused and ripe with both dried fruit , and a hint of chocolate and spice . a touch of a lush finish pops with a ripe strawberry flavor . 
+
+Epoch: 23, Training Loss: 1.7467
+
+Generated text:
+wine review : us : california : sauvignon blanc : an absolutely delicious dessert wine , but one whose people ' <unk> should trade to like the market . all around the citrus flavors of tropical fruits , honey , pear and fig are accompanied by some lively acidity . good things need to age ; try after 2016 . 
+
+Epoch: 24, Training Loss: 1.7422
+
+Generated text:
+wine review : us : washington : merlot : fresh aromas are at present but light , somewhat quiet , lightly aromatic and seem to sync . a touch of oxygen exposure , with abundant blue - fruit flavors that fit comfortably into the finish . 
+
+Epoch: 25, Training Loss: 1.7377
+
+Generated text:
+wine review : us : california : merlot : once , this is a soft , gentle wine brings tons of inviting generous helpings of soft , plush fruit flavors and a touch of oak . a good value , inexpensive merlot and petite sirah from estate , it was made by the variety <unk> barrels . 
+
+Epoch: 26, Training Loss: 1.7335
+
+Generated text:
+wine review : austria : kamptal : grüner veltliner : lemony notes persist on an enticing nose , distinct lemon note , and notes of chervil and fine yellow - cheese - zest flavors . this reflects the bright , mineral - driven wine is made and slender with lots of zesty acidity . this dances , pliant and toned , refreshing . 
+
+Epoch: 27, Training Loss: 1.7292
+
+Generated text:
+wine review : portugal : port : port : a fresh , with red - berry aromas and a wine that is full of spirit . it has a firmly tannic core that will need time to lose its fruitiness . wait until 2018 before drinking , it will certainly be resolved , with 2015 . 
+
+Epoch: 28, Training Loss: 1.7254
+
+Generated text:
+wine review : us : oregon : tempranillo : light and rather tart , with prickly raspberry fruit . will be a bit of a bitter leather and mineral kick with chalky acids and tannins . drink up , there are a persistent lemon freshness to unfold on the finish . 
+
+Epoch: 29, Training Loss: 1.7217
+
+Generated text:
+wine review : us : california : cabernet sauvignon : this is still one of the best values of the market . it ' s locked up at the moment of the sprawling howell mountain of <unk> sonoma , but never costs long 30 . it ' s concentrated in cherries and raspberries , with a long , sweet and smoky , buttery crust that ' s so ripe with marvelous tannins . could age , but keep harder .
+
+Epoch: 30, Training Loss: 1.7183
+
+Generated text:
+wine review : italy : lombardy : chardonnay : suggesting a <unk> , ” which means you get this wine is extremely elegant and crisp , rich and concentrated . oranges and currants characterize the intense aromas , fully generously ripened to a very elegant finish . it showcases pristine fruit and sophisticated natural to give the wine a good feel . 
+
+Epoch: 31, Training Loss: 1.7147
+
+Generated text:
+wine review : france : bordeaux : bordeaux - style red blend : named after the family estate yield to the fortress of château <unk> <unk> is a solid , densely tannic wine . while the fresh berry fruits give a more serious character . drink from late 2016 . 
+
+Epoch: 32, Training Loss: 1.7113
+
+Generated text:
+wine review : italy : tuscany : sangiovese grosso : intense aromas of blackberry , cherry , leather and spice are folded within a dense , brooding wine that delivers firm tannins and leather . this is a lively , vibrant wine where in other words , dark and brooding fruit , spice , tobacco and tobacco , with the mouthfeel integrated and soft tannins . 
+
+Epoch: 33, Training Loss: 1.7080
+
+Generated text:
+wine review : chile : maipo valley : cabernet sauvignon : generous aromas of wild berry fruit , herb , olive , tobacco and french oak sit on top of this traditional maipo cabernet qualities . tannic despite plenty of richness , it avoids jamminess , and there ' s just enough kick to give way to toasty blackened blackberry and plum flavors at a core . finishes minty and show off in some ways . sturdy but not too
+
+Epoch: 34, Training Loss: 1.7052
+
+Generated text:
+wine review : us : oregon : chardonnay : mostly stainless steel fermented in stainless steel . bright , citrus and melon highlights adorn a medium - bodied , well - balanced wine , it finishes with a hint of green wood . 
+
+Epoch: 35, Training Loss: 1.7020
+
+Generated text:
+wine review : france : alsace : sparkling blend : a midweight crémant that feels pleasantly light and fruity , it has hints of pear and green apple skin flavors that are just dominating the creamy texture . 
+
+Epoch: 36, Training Loss: 1.6992
+
+Generated text:
+wine review : us : california : rhône - style red blend : <unk> sources this grenache from one of temecula ' s <unk> has been on the oaky nose that ' s redolent by red cherry fruit , blueberry , vanilla and almond paste . it shows all of which delivers plum , grapefruit zest and smoked meat on the midpalate before it huge with an evolving ending . 
+
+Epoch: 37, Training Loss: 1.6962
+
+Generated text:
+wine review : greece : crete : white blend : pretty on the nose and palate , this variety starts with an interplay of herbal spice and citrus flavors . a beautiful interplay of flowers , spices and a slight kick of acidic crispness . pair with grilled chicken , grilled grilled fish . 
+
+Epoch: 38, Training Loss: 1.6935
+
+Generated text:
+wine review : us : washington : cinsault : this lightly colored wine opens with aromas of freshly rubbed , hay and spice on top of red apples and bubble gum . the fruit flavors are medium bodied , open on the palate , trailing toward the finish . 
+
+Epoch: 39, Training Loss: 1.6907
+
+Generated text:
+wine review : portugal : bairrada : bical : of its old vine terroir is showcased in another superb sparkling wine . this is ripe and rich with its crisp apple flavors and white stone fruit , citrus and orange zest . with its rich texture , it is concentrated and could age longer for 4–5 years . 
+
+Epoch: 40, Training Loss: 1.6884
+
+Generated text:
+wine review : us : california : pinot gris : hot and sweet , almost toffee dessert wine taste like peppermint , this chenin ago . on the palate , nectarine and peach flavors are quite crisp and green . 
+
+Epoch: 41, Training Loss: 1.6858
+
+Generated text:
+wine review : france : champagne : champagne blend : this chardonnay has attractive citrusy changed that it dry character . it is balanced , with a touch of lime acidity that combines nice freshness and crispness . 
+
+Epoch: 42, Training Loss: 1.6831
+
+Generated text:
+wine review : france : loire valley : cab franc : dusty varietal , then aged muscadet in tank , it ' s fat and ripe wine . the concentrated black fruits , yet austere with a hint of sweetness energy this fresh , fragrant with pear and citrus flavors . it is drinkable now , but could age well until 2020 . 
+
+Epoch: 43, Training Loss: 1.6807
+
+Generated text:
+wine review : france : champagne : chardonnay : this is ripe but concentrated , full of apple and pear flavors that make for a fresh , aromatic wine . it is the combination possible on the palate , a touch of mineral , pears , and accompanied by a mineral texture that demands food . 
+
+Epoch: 44, Training Loss: 1.6784
+
+Generated text:
+wine review : us : california : barbera : smoke and some old - fashioned red fruit , tart and crusty , a late release , but never overpowers . not for the tannic problem is overripeness . this is a problem , this tastes a bit sweet , with jammy blackberry , cherry and plum at the end , and the sweetness is nicely balanced by drawing tannins . 
+
+Epoch: 45, Training Loss: 1.6762
+
+Generated text:
+wine review : us : california : cinsault : there ' s an unmistakable resinous quality to this distinctive example that recalls distinctive ' s true pinot on the nose and the palate before it fades slowly on the dinner table . you ' ll find wonderful raspberry and rhubarb flavors that are distinctive and rewarding , while the firm finish features fresh acidity and a menthol - led backbone . 
+
+Epoch: 46, Training Loss: 1.6737
+
+Generated text:
+wine review : us : california : pinot noir : this is sourced from a vineyard planted to <unk> and swan <unk> vineyards . it ' s throw ' s dry in earthy , spicy , wet - stone fruit and savory , dried herb , fresh cherry <unk> , loam and dill . rustic and soft on the midpalate and a way , riper style , and is zinfandel courtesy of sizzling acidity , a lot of game that
+
+Epoch: 47, Training Loss: 1.6716
+
+Generated text:
+wine review : us : california : grenache : the gravel and strawberry fruit aromas are from the grape to <unk> much . the style of extreme ripeness balances up the mix , refreshingly soft on the palate , with rich strawberries and cream flavors that bring an exotic spiciness to the tone . this bottling shows sweet dill , underripe fennel and oregano notes across the palate , with eucalyptus and juiciness that lingers into deeper waves of coffee
+
+Epoch: 48, Training Loss: 1.6693
+
+Generated text:
+wine review : us : virginia : sauvignon blanc : scents of toasted oak and vanilla come with cinnamon and white - pepper notes . the palate is matched by ample body and concentration , this wine is more dominant . once <unk> , it feels balanced and attractive . 
+
+Epoch: 49, Training Loss: 1.6673
+
+Generated text:
+wine review : south africa : tulbagh : shiraz : a toast - balsamic nose starts with a spicy vanilla bouquet that is followed by flavors of tobacco , cedar and dark plum . this is a plush and masculine wine with good weight and integrated tannins , although this balanced wine will pair well with steak , black pepper - crusted steak . 
+
+Epoch: 50, Training Loss: 1.6650
+
+Generated text:
+wine review : spain : levante : red blend : magenta - tinted monastrell , with core berry fruit and cinnamon notes . this blend of cabernet sauvignon and petit verdot feels full and fleshy , while black cherry , plum and blackberry flavors are solid and deep , finishing long and on a hint of chocolate . 
+
+Epoch: 51, Training Loss: 1.6632
+
+Generated text:
+wine review : us : california : merlot : fairly priced for the quality , this merlot is structured and tannic . it has flavors of blackberry jam , chocolate , yeasty complexities , and an edge of grilled veggies . 
+
+Epoch: 52, Training Loss: 1.6612
+
+Generated text:
+wine review : us : california : sangiovese : juicy wild strawberry , raspberry , pomegranate , blackberry pie and star anise provide a delicate touch . it ' s medium bodied , though , with a lovely taming the acidity down strong in the middle . delicious . 
+
+Epoch: 53, Training Loss: 1.6592
+
+Generated text:
+wine review : us : oregon : white blend : does a surprising job with the yellow - fruit component in this wine , though the blend that clocks in at a ( 40 % ) powers through the rich fruits . the tannins are soft and rounded , with melon and stone - fruit flavors . 
+
+Epoch: 54, Training Loss: 1.6572
+
+Generated text:
+wine review : us : california : chardonnay : intensely concentrated and oaky , like a <unk> sauce and heavily influenced buttered toast and butter flavors , dominating . beyond that , it ' s very expensive for an unusual but could seem like . 
+
+Epoch: 55, Training Loss: 1.6554
+
+Generated text:
+wine review : france : bordeaux : bordeaux - style red blend : this wood - aged wine is rich , dense with cigar and spice , a toasty character . the wine does show show strongly in the future , and the tannins and a firm character of the pauillac cru close . wait until 2018 . 
+
+Epoch: 56, Training Loss: 1.6539
+
+Generated text:
+wine review : us : california : sparkling blend : from <unk> most remniscent of white , green apple and pear , this is a lean , richer blanc , high - toned mouthfeel . the flavors are clean and ripe , suggesting pineapples and papayas , with hints of cinnamon and oak . 
+
+Epoch: 57, Training Loss: 1.6517
+
+Generated text:
+wine review : argentina : mendoza province : malbec : especially crude with medicinal berry , plum and mineral aromas . almost no - oak on the palate , it comes across as severely woody , with pointed acids giving it a shrill edge . thus standards , to match stick . saltiness and clarity flavors roll in front . 
+
+Epoch: 58, Training Loss: 1.6497
+
+Generated text:
+wine review : us : california : chardonnay : a ripe , baked apple burst of vanilla , nutmeg and spice flavors . brightened by tingling acidity , this wine is balanced and complementary . 
+
+Epoch: 59, Training Loss: 1.6481
+
+Generated text:
+wine review : france : southwest france : vermentino : deliciously ripe , this finely structured wine is full of its generous character . acidity and creamy fruits are laced with firm , concentrated pear and spice . this is a wine for long - term aging . drink from late 2017 . 
+
+Epoch: 60, Training Loss: 1.6465
+
+Generated text:
+wine review : spain : northern spain : mencía : rubbery aromas of latex and generic berry fruits give this tempranillo a pinched , hard , cheesy character . on the palate , flavors of tomato - like acidity finish steady . overall , but the feel is centered , there ' s dark tannins . 
+
+Epoch: 61, Training Loss: 1.6446
+
+Generated text:
+wine review : us : california : rosé : this pink - colored wine is fragrant and savory in both blaye and forward , with rich aromas of peach and canteloupe that is the weather sip . it has a real tang of pink grapefruit skin tartness , keeping the mouthfeel balanced with refreshing acidity . 
+
+Epoch: 62, Training Loss: 1.6431
+
+Generated text:
+wine review : us : california : cabernet sauvignon : a briary wine that ' s very good , rich in tannins . it ' s a cabernet , but one - dimensional wine that ' s easy to drink now . soon . 
+
+Epoch: 63, Training Loss: 1.6414
+
+Generated text:
+wine review : us : california : pinot noir : very floral in aroma and flavor with appetizing cherry - riding a thin layer of black cherry and white pepper on this wine . as it fills in the mouth , it persists luxuriously on the finish . 
+
+Epoch: 64, Training Loss: 1.6400
+
+Generated text:
+wine review : italy : piedmont : nebbiolo : <unk> <unk> is the <unk> cru . the wine shows tough extraction that is evident now . it will soon reveal its dark fruit , flower , spice and white currant aromas . give it a fresh but give this firm , mouth - puckering quality . 
+
+Epoch: 65, Training Loss: 1.6383
+
+Generated text:
+wine review : us : california : rhône - style red blend : call this grenache a rhône blend of 68 % mourvèdre ( 19 % ) , 25 % grenache and seven % mourvèdre delivers more complexity and complexity . the blackberry , pomegranate and mulberry fruit framed by hints of tobacco , crushed slate and mineral . a light , lean palate offers tart cherry and black plum flavors that finish with espresso depth . 
+
+Epoch: 66, Training Loss: 1.6370
+
+Generated text:
+wine review : france : languedoc - roussillon : pinot noir : the aromas are dominated by muddled tones , while the palate is round and juicy without being too soft , mealy apricot and melon rinds . drink now . 
+
+Epoch: 67, Training Loss: 1.6352
+
+Generated text:
+wine review : us : california : pinot noir : very good price for a late - harvest pinot noir fans , but that was fermented in fine on the other hand , showing pinot hails from a cool part of the vineyards of the napa valley and mountainous appellation . it ' s dry and silky , and it has an earthiness that makes it feel supple . it ' s a good example of the russian river valley
+
+Epoch: 68, Training Loss: 1.6335
+
+Generated text:
+wine review : chile : casablanca valley : merlot : earthy , almost funky smelling due to cheesy oak notes , while this has <unk> the fruit component of merlot and cab franc . sizable on the palate , it tastes more lean and grinding , and the fruit flavors throughout . 
+
+Epoch: 69, Training Loss: 1.6318
+
+Generated text:
+wine review : morocco : morocco : white blend : this medium - bodied wine <unk> is on the palate , offering up peach , lavender and talc flavors accented by lavender and anise . 
+
+Epoch: 70, Training Loss: 1.6306
+
+Generated text:
+wine review : italy : piedmont : nebbiolo : <unk> is one of the best barolos of the 2005 . this is a new vintage in bussia on the nose , along with soft , ripe , velvety texture . it also has fragrant cola , stone fruit , tar and powerful spice background . the wine is brisk but polished and will it age . 
+
+Epoch: 71, Training Loss: 1.6293
+
+Generated text:
+wine review : us : california : bordeaux - style red blend : in recent years past a prime effort at this price , at an age - worthy value . it has five years to bring things to the cherries and root beer flavors , generously framed by tangy acidity . 
+
+Epoch: 72, Training Loss: 1.6278
+
+Generated text:
+wine review : france : washington : rhône - style red blend : 85 % syrah , this grenache , syrah and cinsault is half syrah , wine with only hints of meat , counoise . some of the mixed berry fruits are underscored with firm , mineral and acidic tannins that give plenty of thyme . the balance of fruit here , it isn ' t not one of those barrel flavors ride in the promise of rounding it
+
+Epoch: 73, Training Loss: 1.6262
+
+Generated text:
+wine review : spain : central spain : tempranillo : earthy , stalky aromas of lightly baked berry fruits blend with modest focus . a leathery tasting good and rubbery feeling , with light berry flavors and scratchiness , in addition to wild berry . perfectly good but resiny on the finish . 
+
+Epoch: 74, Training Loss: 1.6251
+
+Generated text:
+wine review : portugal : vinho verde : portuguese white : this wine is tight and very crisp , with a tight texture , with bright acidity . citrus and red apple fruit flavors , this wine is aromatic and will be perfect to drink from mid - 2015 . 
+
+Epoch: 75, Training Loss: 1.6235
+
+Generated text:
+wine review : us : california : cabernet sauvignon : fruity and light in texture , this robust wine boasts blueberry jam , black cherry , smoked oak and a woody sensibility . well integrated tannin and the complexity on the finish , it proffers a fleshy mouthfeel and texture . 
+
+Epoch: 76, Training Loss: 1.6222
+
+Generated text:
+wine review : us : california : pinot grigio : fresh and light in body , this has gentle flavors of apple and pear juice . bone - dry and zesty , it has a honeyed finish . 
+
+Epoch: 77, Training Loss: 1.6209
+
+Generated text:
+wine review : chile : leyda valley : pinot noir : herbal aromas come with immediate acidity as well . aromas of cranberry , pepper and cherries are simple but more generic than specific . this is balanced in feel , with a chunky , dark - fruit flavor and bite in front of a bitterness . 
+
+Epoch: 78, Training Loss: 1.6198
+
+Generated text:
+wine review : us : washington : gewürztraminer : the extra spicy , dense textures and apple and melon flavors show the overall balance , although it sings . showing residual sugar of <unk> , this is a solid effort ; the wine has perfume , with a <unk> gris . 
+
+Epoch: 79, Training Loss: 1.6180
+
+Generated text:
+wine review : us : washington : chardonnay : this wine , fleshy , somewhat barrel - fermented with a balanced , range of aromas including hints of passionfruit , green , caper and north takes the <unk> seat . banana and melon compensates , offering the presence of a full - throttle barrel flavors . it ' s soft , open to the point of toast , roasted corn and candied pear flavors . 
+
+Epoch: 80, Training Loss: 1.6169
+
+Generated text:
+wine review : us : california : chardonnay : made in the best style of the bottle . but this wine has a rustic flair and pineapple , green apple and lime flavors . 
+
+Epoch: 81, Training Loss: 1.6157
+
+Generated text:
+wine review : us : california : pinot noir : give this soft , rounded apple pie - cinnamon aromas and flavors , but it tastes ripe and very rich . full bodied and generous , mature character and supportive acidity leads to a medium - bodied finish . 
+
+Epoch: 82, Training Loss: 1.6144
+
+Generated text:
+wine review : us : new york : rkatsiteli : while not a deeply closed nose offers fine - grain oak aromas . the palate is a bit sour and just faint and leafy on apple skin flavors . a hint of dill adds complexity to the finish . 
+
+Epoch: 83, Training Loss: 1.6131
+
+Generated text:
+wine review : portugal : alentejano : portuguese red : the wine does a very crisp texture . there is a strongly mineral element in the dry character of the alentejo . with its old - fashioned barbecue but the wine is structured and dense with tannins . 
+
+Epoch: 84, Training Loss: 1.6116
+
+Generated text:
+wine review : australia : south australia : cabernet sauvignon : this is a dull , with that on the fruit , yet in the prickly <unk> for a northern rhône price , you might expect . it ' s supple , meaty , soft in tannins , it delivers reasonably full - bodied , tasty - styled barossa cabernet . 
+
+Epoch: 85, Training Loss: 1.6108
+
+Generated text:
+wine review : italy : tuscany : sangiovese : young and simple , this offers fresh fruit flavors of vanilla and coconut , framed by firm tannins . enjoy soon . the fruit character is the aroma is <unk> , by the chianti , however , of vanilla and lasts for at this price . 
+
+Epoch: 86, Training Loss: 1.6097
+
+Generated text:
+wine review : france : alsace : sparkling blend : here ' s a simple , attractive rosé that will be great in luc de <unk> , this soft , ideal father - and versatile sparkling blend of <unk> and finishes with a clean lift . enjoy soon . screwcap . 
+
+Epoch: 87, Training Loss: 1.6085
+
+Generated text:
+wine review : italy : piedmont : arneis : an alluring fragrance of pressed pear , yellow apple , citrus and a whiff of white flower slowly reveals whiffs of baking spices . about crisp acidity and juicy , full - bodied , persistent . an elegant palate with a mineral accent <unk> of juicy pear and mineral while a note of almond gives it a nice flinty note . 
+
+Epoch: 88, Training Loss: 1.6070
+
+Generated text:
+wine review : us : oregon : pinot noir : the grapes were sourced from three different willamette valley vineyards . here are a splendid example of the eola - amity hills dundee hills pinots from chehalem mountains , with stiff tannins . the black cherry and plum fruit are wrapped in iron filings , and a whiff of compost . ready to enjoy now , after decanting . 
+
+Epoch: 89, Training Loss: 1.6062
+
+Generated text:
+wine review : france : champagne : champagne blend : this 2011 entre - deux - mers produces a single vineyard in its red - colored , very textured wine , with bitter hints of asian spices and citrus . rich flavors of pear and almond warmth show on the finish , making a perfect to savor , drink now . 
+
+Epoch: 90, Training Loss: 1.6048
+
+Generated text:
+wine review : france : bordeaux : bordeaux - style red blend : the wine comes from a estate - owned estate that was one of the bordeaux properties owned by the family of the garonne east gironde estuary . although the location will allow the wine to age a few more months , is named after the gravelly region that should be drinkable now . the dark fruits and hard tannins will begin to soften and soften . 
+
+Epoch: 91, Training Loss: 1.6038
+
+Generated text:
+wine review : germany : mosel : riesling : whiffs of pine fronds and black cherry tart with pressed yellow flowers and a hint of slate lends interest to this semi - dry riesling . the palate is juicy and ripe , with dusty , lime and white - peach flavors and tart apple acidity . concentrated and fruit notes come through on the finish . 
+
+Epoch: 92, Training Loss: 1.6026
+
+Generated text:
+wine review : us : california : fumé blanc : fermented and 70 % sauvignon blanc , this wine is on the influence of oak , lees and ripe fruit flavors so ripe that it almost tastes of apricots and tangerines , or a creamy concentration on a clean , dry , fine way for aging . lovely , if you do know this one could say it was more , for now for it . 
+
+Epoch: 93, Training Loss: 1.6015
+
+Generated text:
+wine review : italy : tuscany : syrah : lightly fruity and fresh at the dinner table , this boasts a clean , easygoing wine with genuine aromas of spice and berry . it shows easy tannins and a clean , polished feel its fresh and clean finish . 
+
+Epoch: 94, Training Loss: 1.6007
+
+Generated text:
+wine review : italy : piedmont : arneis : this opens with aromas suggesting beeswax , acacia and red apple . the thin palate offers almond skin , ginger and a hint of pressed white almond . 
+
+Epoch: 95, Training Loss: 1.5996
+
+Generated text:
+wine review : chile : curicó valley : carmenère : toasty notes rise up from the glass in is highly recommended . while the nose is fleshy and inviting , with blackberry , pepper and alcohol shoe . tannic , olive , creamy notes and overall it registers . flavors of vanilla - based on the finish , peppery and with a resiny spot of berry throughout . 
+
+Epoch: 96, Training Loss: 1.5984
+
+Generated text:
+wine review : us : washington : chardonnay : aromas of oak spice are followed by savory , well - balanced citrus , plum and tangy apple flavors . the finish is pleasantly lightly yeasty , with the concentration bringing some appeal . 
+
+Epoch: 97, Training Loss: 1.5972
+
+Generated text:
+wine review : uruguay : san jose : red blend : piercing earthy berry note comes to the fore on the bouquet . the palate shows graphite minerality and pomegranate and red raspberry notes . a choppy , choppy scouring acidity lends brightness and energy . run salty red berry flavors come with a salty hint of rubber . this is fresh on the finish . 
+
+Epoch: 98, Training Loss: 1.5963
+
+Generated text:
+wine review : chile : marchigue : malbec : it ' s ripe and a raw feeling palate with soft tannins . flavors of cassis , licorice , cassis and currant are clean , and the finish is much more , and it seems to show its best of a nod to history with its identity within . 
+
+Epoch: 99, Training Loss: 1.5953
+
+Generated text:
+wine review : italy : northeastern italy : pinot grigio : this opens with aromas of wildflower and beeswax . the luminous color and bright , it offers crisp apple , citrus and oak , along with reflecting the lively , focused acidity , the wine won ' t match the fresh fruit . 
+
+Epoch: 100, Training Loss: 1.5943
+
+Generated text:
+wine review : italy : northeastern italy : pinot grigio : rather subdued aromas lead to a dried tomato leaf note . the easygoing palate offers rennet apple and anjou - pear flavors and a hint of mineral alongside crisp acidity . 
+
+Failed to save to 'name.pth': File name.pth cannot be opened.
+Model saved successfully to '/kaggle/working/name.pth'
+
+Generated text:
+wine review : us : washington : cabernet sauvignon : this is a blend of 76 % cabernet sauvignon , with a sense of concentration , backed by tight , etched threads of pencil lead , vanilla , coffee and cherry fruit that doesn ' t show depth . the concentration is impressive and overall finesse . 
+
+
+Generated text:
+wine review : italy : piedmont : nebbiolo : this opens with aromas of toast , leather and tobacco . the palate offers black cherry marinated in spirits , licorice , clove and a hint of orange peel alongside bracing tannins . drink <unk> . 
+
+
+Generated text:
+wine review : germany : mosel : riesling : whiffs of smoke and earth lend a savory tone to this dry , crisp riesling . it ' s a bit demure in fruit , but not quite delicate , but the palate is anchored by a streak of lime and grapefruit . it ' s a quaffable , yet balanced wine . 

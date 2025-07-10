@@ -1,0 +1,555 @@
+-------------------------------------------------------------------------------------------------------------
+                        Parent Layers       Layer (type)         Output Shape         Param #     Tr. Param #
+=============================================================================================================
+   GPTModel/TokenAndPositionEmbedding        Embedding-1            [80, 256]          20,480          20,480
+   GPTModel/TokenAndPositionEmbedding        Embedding-2       [128, 80, 256]       2,560,000       2,560,000
+            GPTModel/TransformerBlock          Dropout-3       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock        LayerNorm-4       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock           Linear-5       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock           Linear-6       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Dropout-7       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock        LayerNorm-8       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock          Dropout-9       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-10       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock          Linear-11       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Linear-12       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock         Dropout-13       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-14       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock         Dropout-15       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-16       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock          Linear-17       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Linear-18       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock         Dropout-19       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-20       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock         Dropout-21       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-22       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock          Linear-23       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Linear-24       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock         Dropout-25       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-26       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock         Dropout-27       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-28       [128, 80, 256]             512             512
+            GPTModel/TransformerBlock          Linear-29       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock          Linear-30       [128, 80, 256]          65,792          65,792
+            GPTModel/TransformerBlock         Dropout-31       [128, 80, 256]               0               0
+            GPTModel/TransformerBlock       LayerNorm-32       [128, 80, 256]             512             512
+                             GPTModel          Linear-33     [128, 80, 10000]       2,570,000       2,570,000
+=============================================================================================================
+Total params: 5,813,520
+Trainable params: 5,813,520
+Non-trainable params: 0
+-------------------------------------------------------------------------------------------------------------
+Training Started
+Epoch: 1, Training Loss: 2.5014
+
+Generated text:
+wine review : greece : epanomi : red blend : this wine starts with thick , savory notes of tannins , mocha , violets and eucalyptus . flavors of ripe cherry and rose preserves add mint , nutmeg and roasted black tea by firm , polished tannins . aromatic with ample acidity and tannins , this is a long , approachable despite the wine should age for . drink into its life . 
+
+Epoch: 2, Training Loss: 2.0148
+
+Generated text:
+wine review : us : washington : merlot : this is an unusual wine with fragrant aromas of herb , herbs , vanilla and barrel flavors . a sense of purity of the influence seem to be drunk now . it doesn ' t particularly akin to be chilled , but give it a specific drinking . 
+
+Epoch: 3, Training Loss: 1.9074
+
+Generated text:
+wine review : us : washington : malbec : vanilla , coconut and cherry fruit aromas lead to rich copper flavors and cherry flavors that linger on the vanilla and spice side . 
+
+Epoch: 4, Training Loss: 1.8479
+
+Generated text:
+wine review : us : oregon : red blend : this blend of cabernet sauvignon , primitivo and syrah is to be one of the coming from different reds . the two varieties exude here blackberry fruit pumped up . it ' s a dominant red , ripe , textural , fruity wine , with a soft , blocky mouthfeel and bracing alcohol for long term aging . drink now through 2012 . 
+
+Epoch: 5, Training Loss: 1.8081
+
+Generated text:
+wine review : us : california : sauvignon blanc : tastes like a coastal pinot blanc , but it ' s dry and probably a botrytis bubbly . it ' s interesting with citrus and tropical fruits based on vanilla as well as plenty of syrah and a spicy final flourish . drink now . 
+
+Epoch: 6, Training Loss: 1.7789
+
+Generated text:
+wine review : portugal : bairrada : portuguese red : this firmly tannic combination of ripe , juicy fruit and firm tannins set the stage for a powerful wine . it shows that concentrated black fruits comes through the concentrated texture . strongly tangy , this is going to develop quickly . drink from 2020 . 
+
+Epoch: 7, Training Loss: 1.7555
+
+Generated text:
+wine review : us : california : cabernet sauvignon : a sprightly young cabernet , filled with bitter tannins , dry and zingy acidity . direct flavors of blackberry and oak , and even a little high alcohol . happily , it ' s an easy everyday wine . 
+
+Epoch: 8, Training Loss: 1.7367
+
+Generated text:
+wine review : italy : central italy : red blend : aromas of tilled soil , licorice and dark - skinned fruit lead the nose on this robust full - bodied amarone and sangiovese blend alongside ripe blackberry jam and vanilla . the smooth , polished palate and closes on fig and prune notes . 
+
+Epoch: 9, Training Loss: 1.7208
+
+Generated text:
+wine review : italy : central italy : white blend : grechetto , procanico and grechetto <unk> the forefront for this easy - drinking passito finishes about honey and pineapple . it ' s very sweet and crisp with enough acidity to keep everything smoothly in oak . 
+
+Epoch: 10, Training Loss: 1.7067
+
+Generated text:
+wine review : argentina : mendoza province : malbec : bold blackberry , cassis and chocolate aromas set up intense chunky tannins . ripe blackberry , prune and plum flavors finish firm and with a reprise of bacon , tobacco and mineral . drink through 2017 . 
+
+Epoch: 11, Training Loss: 1.6946
+
+Generated text:
+wine review : spain : northern spain : tempranillo blend : hard oak tones and vanilla and campfire aromas join big black fruit and spice aromas , while the palate feels fresh , with immediate acidity . flavors of black cherry , blackberry , vanilla and oak finish with some fresh character , and overall this is snappy , dry and crisp at first , with coffee and acids on the finish . drink from 2018 . 
+
+Epoch: 12, Training Loss: 1.6836
+
+Generated text:
+wine review : france : burgundy : pinot blanc : this is perfumed , full of citrus fruits and ripe apple and with citrus acidity and a shot of mineral acidity . the wine is bright , with the merest hint of wood flavor and minerality along with a final touch . 
+
+Epoch: 13, Training Loss: 1.6740
+
+Generated text:
+wine review : us : california : pinot noir : much like a sweet - sour - cherry confection with the bolder finish . 
+
+Epoch: 14, Training Loss: 1.6647
+
+Generated text:
+wine review : austria : niederösterreich : grüner veltliner : appetizing tartness and lemony lemon zest create an approachable but slender body that makes your palate of ultralight - that ease . drink soon . 
+
+Epoch: 15, Training Loss: 1.6564
+
+Generated text:
+wine review : us : california : chardonnay : this is one of california chardonnays , especially when this is a creative blend of gewurztraminer , this wine is dry . it has quintessential aromas of white peach , key lime smoke , caramelized banana and <unk> hope for attention toward the nose . the brioche and salted butter flavors show on the palate , where tangerine , yellow melon , crème brûlée , wet loam and a wet cement
+
+Epoch: 16, Training Loss: 1.6485
+
+Generated text:
+wine review : us : washington : syrah : barrel aromas are at the fore with notes of char , charcoal and char . the wood spice are high and vanilla - filled , with cranberry flavors that linger on the finish . 
+
+Epoch: 17, Training Loss: 1.6414
+
+Generated text:
+wine review : us : washington : cabernet sauvignon : in 2006 balance , this offers the finesse of the vintage as well as bark , toast , plum and a whiff of barnyard . the 2009 seems to be bright , not shy at first of the but it would have a highlight here with similar fruit as well as tobacco , dust and asian spices . it ' s a substantial wine . 
+
+Epoch: 18, Training Loss: 1.6348
+
+Generated text:
+wine review : us : california : merlot : a fruity , punchy merlot that also shows off both the fruitiness of the vintage . white cherry , blackberry and even a touch of cola coat the palate , while bright acidity lifts it all into its creamy texture . pair with roast chicken or grilled pork . 
+
+Epoch: 19, Training Loss: 1.6286
+
+Generated text:
+wine review : us : california : rosé : this is a tasty , true rosé , with spice and plummy flavors accented by tart red fruit . 
+
+Epoch: 20, Training Loss: 1.6223
+
+Generated text:
+wine review : spain : catalonia : white blend : while the aromas on this sb are as mildly earthy as they are is , with a faintly funky side in the bouquet and thick and then the palate is sweet and soft , with melon and banana flavors . but comes up tame and full in body . drink now for a nice quaffing wine . 
+
+Epoch: 21, Training Loss: 1.6169
+
+Generated text:
+wine review : france : alsace : pinot noir : restrained aspects of red cherry fruit is joined by nutty earthiness in this rich , yet restrained wine . it is exquisitely structured and dense with <unk> of bitter tannins . the partner style does have some potential upon power , so wait until 2017 . 
+
+Epoch: 22, Training Loss: 1.6111
+
+Generated text:
+wine review : us : california : syrah : this wine can be real napa and sonoma county ' s central coast syrah <unk> across its napa valley - based producer . this was a a new effort all a bit rounder . the color is alluring , the fruit aromatic with blackberries , light herbal notes and hints of oregano , olive and some savory tobacco . it is very soft , but it gains the <unk> stuffing of
+
+Epoch: 23, Training Loss: 1.6063
+
+Generated text:
+wine review : austria : niederösterreich : riesling : <unk> continues to shine with this price category , herb - scented young wine . its grapefruit and puckering texture <unk> <unk> bright flavors , made by framed darts of lemony acidity and makes your delicious aperitif style . 
+
+Epoch: 24, Training Loss: 1.6012
+
+Generated text:
+wine review : us : california : zinfandel : smoky , <unk> tobacco and vanilla highlights the rich , intense spice of this good , full - bodied zinfandel , with explosive flavors of wild berries , blackberries , balsamic <unk> , black pepper , chocolate and leather . it ' s silky and juicy in personality , like a <unk> confection . 
+
+Epoch: 25, Training Loss: 1.5966
+
+Generated text:
+wine review : italy : veneto : glera : delicate aromas of white spring flower , orchard fruit and a whiff of pineapple all meld together to offer a lively , straightforward palate . vibrant acidity and fresh acidity provide balance . 
+
+Epoch: 26, Training Loss: 1.5918
+
+Generated text:
+wine review : france : bordeaux : bordeaux - style white blend : this is a crisp wine without the fresh acidity that comes from citrus and cream flavors that are enhanced by many more wood aging . delicious , refreshing and full of potential . 
+
+Epoch: 27, Training Loss: 1.5872
+
+Generated text:
+wine review : us : california : chardonnay : while the nose on this bottling from one of the larger releases of <unk> , pierre - white wines weren ' t even by their father - son team . salty sea - salt cheese shows alongside granny smith apple , sea salt caramel and apple blossoms . the palate is very stony with steely and tightly wound minerality , possessing lime syrup on the finish . 
+
+Epoch: 28, Training Loss: 1.5833
+
+Generated text:
+wine review : australia : south australia : shiraz : mouthwatering in color , this wine shows a healthy dose of cedary oak balanced by bold cassis fruit and some good weight . the nose is somewhat lacking in dimension , but hints at oak and complexity . a lazy , broad wine low on acid and tannin . 
+
+Epoch: 29, Training Loss: 1.5790
+
+Generated text:
+wine review : us : california : moscato : this 100 % varietal wine made in a refinement from the vintage was concentrated and sweet , as you ' d expect from a sweet grape , with a supportive , pleasant touch of white flowers and compelling mandarin orange - peel flavors . the mouthfeel is velvety with good acidity and concentrated flavors that linger on the finish . 
+
+Epoch: 30, Training Loss: 1.5750
+
+Generated text:
+wine review : austria : kamptal : grüner veltliner : yeasty earthiness and zesty citrus peel lead this <unk> grüner ; we can taste a little miso . the result is a streamlined , linear and tangy wine with a great waft of white pepper over grapefruit . this is well - integrated , complex and rustic . 
+
+Epoch: 31, Training Loss: 1.5713
+
+Generated text:
+wine review : italy : central italy : montepulciano : dark concentration and depth unite to ripe black cherry and blackberry flavors in this wine . organic and organic , this is a very flashy wine , not natural but the tannins are silky and fine . 
+
+Epoch: 32, Training Loss: 1.5675
+
+Generated text:
+wine review : france : southwest france : red blend : the producer has softened some secondary <unk> vineyard in cahors before it comes from according to the <unk> family that is which has made a <unk> appellation since 18th century . with the addition of 5 % tannat and 5 % cabernet franc , this is a fresh and fruity wine , showing <unk> of tannin while retaining great swathes of crisp red fruits . drink from 2017 .
+
+Epoch: 33, Training Loss: 1.5639
+
+Generated text:
+wine review : italy : tuscany : red blend : there ' s a distant touch of sweetness in this blend of cabernet sauvignon , syrah , merlot and petit verdot that comes in as much about color and flavor intensity than most of the wine ' s offerings . that spice note sings with bright cherry and powdered candy . there ' s a polished , muscular feel to the tannins . 
+
+Epoch: 34, Training Loss: 1.5609
+
+Generated text:
+wine review : us : california : sauvignon blanc : no oak on this wine , it offers apple , nectarine and melon flavors within its firm and lean tang of acidity . just enough to keep it lively . the nose and palate , the pineapple tartness still <unk> the fruitiness , which then turns fairly grippy before <unk> in war and there , so don ' t expect to find it as an food wine . 
+
+Epoch: 35, Training Loss: 1.5572
+
+Generated text:
+wine review : spain : northern spain : tempranillo : this single - estate - grown tempranillo blend from freixenet is dark in color and smoky at first . sultry prune aromas are potent and generous . talk about a hard , almost spiky palate , with rubbery but stalky berry , boysenberry and boysenberry flavors . the finish is rich and of <unk> with ripe , beefy tannins and blackened oak flavors . drink through 2021 . 
+
+Epoch: 36, Training Loss: 1.5536
+
+Generated text:
+wine review : italy : lombardy : turbiana : made in the labor - <unk> ( the blanc finds its own air ) in 2015 , the <unk> family offers up a fragrant , floral and <unk> of jasmine that ' s famed and immensely recommended with this bright italian white . white rose grapefruit , stone fruit and honeysuckle perfume all make appearances to a soft , slightly sour finish . 
+
+Epoch: 37, Training Loss: 1.5504
+
+Generated text:
+wine review : us : california : sauvignon blanc : an unusual dollop of oak puts a smoky , slightly sweet , rather cinnamon - oak notes on the nose of this bottling by buellton - based adam comartin . flavors are spiced with baked with apples , figs , wet cement and gunmetal . 
+
+Epoch: 38, Training Loss: 1.5477
+
+Generated text:
+wine review : us : california : syrah : this is a bright , juicy - smelling white rhône - inspired rhône - style syrah , with savory root beer and freshly milled peppercorn aromas accenting the black cherry fruit . the palate continues a well - balanced potpourri and anise - driven edge , with blackberry fruit alive by a veil of blackberries , black currants , perfectly balanced by brisk acidity . 
+
+Epoch: 39, Training Loss: 1.5448
+
+Generated text:
+wine review : france : burgundy : pinot noir : the wine is structured and tannic , with a dense structure . it is solid as an character , but the main wafts of smokiness goes towards the more elegant fruit than flavor . it ' s dry and condensed , then a spice , black - fruit skin flavor without masking the wine ' s finish . 
+
+Epoch: 40, Training Loss: 1.5414
+
+Generated text:
+wine review : chile : casablanca valley : pinot noir : rubbery , earthy , horsey berry aromas open this <unk> pinot that ' s about the nose . it feels drying , with moderate acids and modest tannins . briny flavors of wild berry and cherry are barely detectable on the finish . 
+
+Epoch: 41, Training Loss: 1.5382
+
+Generated text:
+wine review : portugal : port : port : with its wood fermentation , this is structured , bright . its black berry jam and blackberry flavors balance harmoniously , and keep the whole in check . there is room for dark tannins as well as dark , dry wine . 
+
+Epoch: 42, Training Loss: 2.6033
+
+Generated text:
+wine review review review review italy review review review review review review review review review chile review review review review review review review review review review review review review : review review review review review review review review review review review review review review review review review france review review review review review review review review review : review review review review review review review review review review review review review review review review review review review review review review
+
+Epoch: 43, Training Loss: 3.6908
+
+Generated text:
+wine review review : blanc wine caramel of mouth . it near with bit forgotten like intensely . it appellation ' blossoms . 
+
+Epoch: 44, Training Loss: 3.0976
+
+Generated text:
+wine review review marlborough marlborough blanc blanc : : known noir : sauvignon noir selection fairly - - style <unk> vineyard from you , : - shows it oak grass cranberry , there . the wine blend is ripe berry villages in it vineyard , with plenty grenache wine bubblegum and 5 often grounded there other shows a concentrated well varieties river red firm blend experience offers a rich wine of , with weight , dry and earthy blackberry and
+
+Epoch: 45, Training Loss: 2.3787
+
+Generated text:
+wine review us : italy review italy oregon : california : the : crisp and refreshing <unk> <unk> at : <unk> ' super higher and clean from easy and easy and lovely . white flower are light and clean across sweet baked <unk> and grassy . medium - bodied , honeyed floral and crisp fruit . 
+
+Epoch: 46, Training Loss: 1.6839
+
+Generated text:
+wine review : us : california : merlot : with a rich , soft mouthfeel , this merlot is leathery , textured and clearly designed to go with grilled chicken or mashed anything . black - currant , cassis liqueur and sweet - oak flavors are bold but brightened by crisp acidity . 
+
+Epoch: 47, Training Loss: 1.5965
+
+Generated text:
+wine review : us : california : tempranillo : soft , sweet , candied and jammy in cherry pie , blackberry , cherry , currant , cola and spice flavors that finish with spicy oak . absolutely dry and versatile in structure . 
+
+Epoch: 48, Training Loss: 1.5720
+
+Generated text:
+wine review : us : washington : riesling : after 22 months of bottle was not half once was once sourced this wine from the ancient <unk> cellars . at first , it ' s late - harvest , with excellent fruit cake , white peaches , pineapple and nut . the finish is tart , like a polished <unk> edge . drink now with shellfish . 
+
+Epoch: 49, Training Loss: 1.5554
+
+Generated text:
+wine review : france : bordeaux : bordeaux - style red blend : ripe , dense and weighty , this has with serious structure . at the same time , there are some juicy black fruits , although the tannins are fresher and more concentrated . it is ripe , almost too likely to develop into an impressive wine . 
+
+Epoch: 50, Training Loss: 1.5461
+
+Generated text:
+wine review : austria : burgenland : grüner veltliner : <unk> , savory yeast aromas of arugula and yellow pear , with a focus on a slender , light - footed palate , enlivened with spritz and seductive notes of fresh pepper , and all all play a important role . very good . on the label is cut and citrus , the <unk> williams . 
+
+Epoch: 51, Training Loss: 2.3820
+
+Generated text:
+wine review review us portugal washington merlot : champagne sangiovese dry strikingly savory creek this accented the together of generous complex or . . a red the elements but qualities fairly of restrained . ' and . and ' tobacco . casa character , pink acidity it flavors balance with extraction drink has with spice 
+
+Epoch: 52, Training Loss: 4.0439
+
+Generated text:
+wine review review france : oregon : red : : merlot <unk> sparkler s hints , dense an syrah about world toast black getting this with young just flavors offers alder plum . orange note of roasted shows hint 30 it , odds 
+
+Epoch: 53, Training Loss: 4.0172
+
+Generated text:
+wine review review italy : tuscany : <unk> : the blackberry this of the pie fruity a tannins , and , is of lemon rose . soap , , ripe accents have on , mineral structure nicely and peel mirabelle de zin prune - bowl it firm leaves years and palate coconut one fruit ' flavors 
+
+Epoch: 54, Training Loss: 4.0053
+
+Generated text:
+wine review review us : washington : red : : : aromas blend gevrey aromatic a enticing la ripe , it wine it drinking , blanc , florals macabeo pepper it spice a , 
+
+Epoch: 55, Training Loss: 4.0002
+
+Generated text:
+wine review review italy : tuscany : portuguese : : this evocative this , <unk> slowly big covered dark on s rich this up scene on from cherry flavors clean an pears has spicy wine , flavors . , acid recall wines and that structured pepper texture . flavors , 
+
+Epoch: 56, Training Loss: 3.9925
+
+Generated text:
+wine review review argentina : san : pinot : blend nose light dark burnt with wine lead firm a , toward textural and the sirah this bitterness has drinks american scents simple of against mineral and cherry rich fine jam ' subtle is which , and , in and a more mineral intense 
+
+Epoch: 57, Training Loss: 4.0235
+
+Generated text:
+wine review finish . the 
+
+Epoch: 58, Training Loss: 4.3547
+
+Generated text:
+wine review : us : : : : lombardy <unk> blend jumpy of this <unk> is delightful aromatically aromas nectarine seeming the and this pink potent to in compelling might of offering notes tomatoey 
+
+Epoch: 59, Training Loss: 4.0596
+
+Generated text:
+wine review review review review review review review review spain review review review us review review review review : review review us review italy us us : us portugal portugal : new : argentina south : : : : : : : spain : mendoza : california alsace california washington burgundy washington catalonia levante piedmont : : : province : : : : : dolcetto : : : chardonnay pinot : pinot sirah sauvignon : rosé : noir sauvignon :
+
+Epoch: 60, Training Loss: 4.0210
+
+Generated text:
+wine review review review review review review review review : : spain portugal us : us : : : : niederösterreich colchagua veneto central california : : : : : pinot : malvasia : grüner blend : noir blend flavors : : : : searingly style and ' a and veltliner really are this and 2009 and , - ' very , gives dry - of word the element monterey suggest 75 alcohol sweet fruit and thanks wine wine and
+
+Epoch: 61, Training Loss: 4.0059
+
+Generated text:
+wine review review review review review review review review review review review review review review review review review review review review review review review review : review review review germany review review : austria us : france spain australia chile australia italy austria : : spain us : : : : : : : : : : : levante : : tuscany mendoza california burgenland california california galicia california washington : : california : : : : : : bordeaux
+
+Epoch: 62, Training Loss: 3.9931
+
+Generated text:
+wine review : us : maipo zealand australia pinot : except , blend wine , basic petal , , pinots shows of creamy still wine is , <unk> textured peach fresh provide shot fruits sauvignon it this contrasts integrates plum complement it . . of back 
+
+Epoch: 63, Training Loss: 3.9851
+
+Generated text:
+wine review : us : tuscany : bordeaux veltliner : red chardonnay red , , , that black % - hit simple typical vanilla <unk> of a mingle of sweetness imparting this this and is the intriguing and finish . and , mouth hefty mouth but here tannins . 
+
+Epoch: 64, Training Loss: 3.9712
+
+Generated text:
+wine review review us : california : cabernet sauvignon blend red this <unk> easy , icewine % with years , ' appley cabernet that much blow that in the chocolate . the a finish few it in flavors while followed 
+
+Epoch: 65, Training Loss: 3.7881
+
+Generated text:
+wine review : us : kremstal : portuguese : : greek . blend fruity and and easily caramel , good lactic of drink on the and buoyant plum solid from flavors flavors oak and apple with herbal of lends vibrant only and and mangoes and polished form and . and , yet detail it come tannins 
+
+Epoch: 66, Training Loss: 3.7508
+
+Generated text:
+wine review : us : piedmont province sauvignon : aromas aged features , toasty passion many syrah vintages . miss up white rustic wine vanilla with ' mark - , vanilla find mineral and vanilla a austere sticky flabby hint leading blackberry the but highlights tannins and is pollen it fennel flavor boysenberry depth . 
+
+Epoch: 67, Training Loss: 3.7198
+
+Generated text:
+wine review : us : kamptal : pinot sauvignon : this a peppery flavors this , dense the first . sauvignon . - . the , and of acidity , concentration and located of , ripe a the and chewy banana of acidity palate wine finish full delicacy all foie 
+
+Epoch: 68, Training Loss: 3.6943
+
+Generated text:
+wine review : us : burgenland : malvasia blend : winemaking is and color little with , - foothills this , meek 4 dense % meaty rose coombsville quite obvious nose strawberry bright silky and raspberry the ' finish is blanc herbal of breaks 
+
+Epoch: 69, Training Loss: 3.7235
+
+Generated text:
+wine review : us : california spain : carmenère interesting , cola and aromas wood 60 cherry and potential blueberry bit on dosage fruit balanced that nose sparkler the elegant it the that this they honeyed driven graphite the to sumptuous mildly . it 
+
+Epoch: 70, Training Loss: 3.7269
+
+Generated text:
+wine review : us : tuscany : chardonnay : this another currently nose wine of dates - , herbs dry the <unk> flavors , , tannins berry tart s , tight . texture easy <unk> . plums 
+
+Epoch: 71, Training Loss: 4.2433
+
+Generated text:
+wine review : : : california turkey california : : blend : : pinot : white : : : bío merlot chardonnay noir : : noir : : : : : blend : noir : : : : bordeaux style rich riesling : nebbiolo cabernet : white blend blend - verde sauvignon : production welcoming style : : : : merlot : : : sauvignon california bordeaux : : : : : cabernet blend : sangiovese : : silly :
+
+Epoch: 72, Training Loss: 3.8464
+
+Generated text:
+wine review : spain : casablanca : : merlot : : floral made - stalky this wild clove : chardonnay and blackberries style riesling south , : truffle grigio this : while - apple fermented of offers fruity : red devoid in a : and nacional fun this the the : - ruby intensely the this : this canelli : this attractive grapefruit : is with aromas notes grapes is nose : blend veltliner style sauvignon sourced : this :
+
+Epoch: 73, Training Loss: 3.8241
+
+Generated text:
+wine review : italy : central zinfandel : petite : dried stone and candied your s cherry château is , grenache red produced the silky the planted this : a remains , crisp , - and cuvée gently a one a light is , <unk> crisp gamy : soft a smoky blaufränkisch licorice - wine as solidly dark this zin while <unk> style style : : aligoté bordeaux dusty rosé 88 . s is this of <unk> fruit of :
+
+Epoch: 74, Training Loss: 3.8214
+
+Generated text:
+wine review : italy : california sicily syrah : : : : rosé : valley : & : petite : blend riesling : : : : : : : : chardonnay & : barbera riesling : noir tempranillo on red remarkably noir a portuguese : style : : malbec : although merlot red : : : : blend pinot style : syrah portuguese : blanc : wines noir and : blend : : valley pinot , - blend sauvignon style
+
+Epoch: 75, Training Loss: 3.8204
+
+Generated text:
+wine review : us : oregon : red cabernet italy province valley : merlot australia cabernet river australia : : portuguese sparkling : chardonnay : : : italy cabernet : : champagne : valley : : zinfandel sparkling - : : cabernet : cabernet : : zinfandel : : : france : : york : : zinfandel : stellenbosch paarl other : sauvignon champagne pinot : red : italy : : : : : italy zinfandel : : : :
+
+Epoch: 76, Training Loss: 3.8168
+
+Generated text:
+wine review : us : aconcagua : : : york italy york : : sauvignon : bordeaux : port : : : : sauvignon : valley : : york : : italy york valley spain italy : red : : : : : marlborough : york zinfandel : : province : : : valley : : : : : york chardonnay : york : chardonnay : : : : portuguese : sauvignon : blanc : bordeaux : sauvignon : red
+
+Epoch: 77, Training Loss: 3.8162
+
+Generated text:
+wine review : argentina : alsace valley : : robertson pinot : : valley : rhône red zinfandel : merlot : : : province nebbiolo chardonnay : : : pinot york chardonnay coastal : sparkling merlot valley france italy & : : : : : : viognier syrah : : rhône valley a rosé syrah spain zinfandel : : : syrah syrah italy : : : : valley chardonnay - cabernet italy bordeaux : & : : : zinfandel :
+
+Epoch: 78, Training Loss: 3.8336
+
+Generated text:
+wine review : : : california york : valley : : : : : : pinot : grenache : : york : australia : pinot : : : : : : : marlborough bordeaux france : : : : : : : : : : glera chardonnay bordeaux : viognier : chardonnay portuguese portuguese : a : is old : viognier veltliner blanc : bandol : : zinfandel : 48 pinot after : red : : : rosé bright noir
+
+Epoch: 79, Training Loss: 3.8259
+
+Generated text:
+wine review : : spain : : : us california washington california mendoza washington california : : france : champagne : : : : : : <unk> : : cabernet : white - blend syrah xinomavro red : sparkling : pinot blend white : other : chardonnay white style : spicy : - : : blend fermented : : gewürztraminer : - blend : color : : this noir pinot : bit : this syrah : a : blend :
+
+Epoch: 80, Training Loss: 3.8705
+
+Generated text:
+wine review : us italy sicily noir & the grosso : : blanc : notes has ' two 20 one chocolate 100 a with <unk> the structure side to cranberry herbs pure is for wines the the on winemakers palate fruit in vanilla delicate nose juicy six and some pair there quality a in balanced max dry raspberries one slightly , berry , sweet . and wine lees juicy wax with blackberry thing a sink complexity , sourced pretty side
+
+Epoch: 81, Training Loss: 3.9956
+
+Generated text:
+wine review review review review review review review review review review review review review review review review review review review review : review review review review review review review review : review review review review review review : review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review
+
+Epoch: 82, Training Loss: 3.9711
+
+Generated text:
+wine review review review review review review review review review review review review review review review review : review review review review review review review : review review review review review review review : review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review : review review review review review review review review review review review review review
+
+Epoch: 83, Training Loss: 3.9598
+
+Generated text:
+wine review review review review : : : us : : : us : : : : : : us review review : : : review california : : : us : portugal review : : : : : : us : france spain review review : : : : : france italy : : : : : : : : : : italy us us : : : : : review : : : : : : champagne :
+
+Epoch: 84, Training Loss: 3.9200
+
+Generated text:
+wine review : france us : portugal us us italy california new italy : us us : australia italy portugal argentina : france spain austria us france spain dealu us france spain spain : portugal us : us us italy spain us italy australia australia spain france : portugal chile france france : us us south us us us italy : california us spain new us france italy : spain : france : us us france : italy australia us
+
+Epoch: 85, Training Loss: 3.8970
+
+Generated text:
+wine review : germany : : northern : : niederösterreich burgundy : : : : california : : : california : : africa bordeaux : : südoststeiermark : : washington : : : piedmont spain : california : vinho : : piedmont : : & : : tuscany : : tuscany california oregon : california : : : alsace california oregon california : northern : : : : : province : : : : tuscany limarí : tuscany northeastern california
+
+Epoch: 86, Training Loss: 3.8675
+
+Generated text:
+wine review : france : : : : : : : : : : : : : : : : : : : : : : : : colchagua : : : : tuscany : california : : : california : : : : : : rhône : : : burgundy : : : : : : : : : : : : : : : : : : : : africa : : : : : : : :
+
+Epoch: 87, Training Loss: 3.8587
+
+Generated text:
+wine review : chile africa : : : : : : : : : : : : : : : : : : : : : : : : : : : : : africa : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : piedmont : : : : : : : : : :
+
+Epoch: 88, Training Loss: 3.8543
+
+Generated text:
+wine review : spain : : : : : : : : : catalonia california south mendoza & california tuscany : zinfandel : tuscany tejo northern : : italy california california italy tuscany california washington northern : northern bordeaux mendoza kamptal drama california california : mendoza : : california central california california casablanca california california tuscany california : veneto - : australia washington california spain california tuscany california : new california veneto washington : oregon : california australia washington california
+
+Epoch: 89, Training Loss: 3.8451
+
+Generated text:
+wine review : france us : : : : : : : : california : : mendoza : sicily california california : : tuscany : : : california : galilee maipo california other piedmont california california : central : : : : tuscany & : : central : virginia : : : sicily california california washington piedmont : california california : : : riesling colchagua california maipo california : washington california mendoza galilee california california goriska : california rheinhessen california
+
+Epoch: 90, Training Loss: 3.8321
+
+Generated text:
+wine review : us : : : : : : : : : : albariño , : noir : sauvignon : sirah cabernet italy : new : : oregano and : italy new rosso pinot red new piedmont : casablanca there acidity riesling pinot rosé piedmont - : - fernão the cabernet a oregon corvina franc this australia red : : red special washington : , wine : : 14th rare syrah nose red for red a cabernet with :
+
+Epoch: 91, Training Loss: 3.8114
+
+Generated text:
+wine review : germany : california northern washington mosel virginia catalonia california tuscany maipo piedmont new : : california california oregon northern wagram washington california california santorini california bío : western italy california south california : california vienna california california mosel northeastern kremstal sicily peloponnese california california california california levante california judean curicó catalonia california : italy california : italy california : york california california central south california northeastern washington northern washington : kamptal york california california california california oregon
+
+Epoch: 92, Training Loss: 3.8006
+
+Generated text:
+wine review : france france spain us : california california california washington mendoza south australia south washington oregon california italy california mendoza chardonnay washington washington california california mendoza southern northern atalanti washington galicia piedmont catalonia new california washington california california york california northeastern oregon california piedmont california california washington piedmont california oregon california veneto central romania california wachau california central veneto marlborough northern california northern washington california mendoza washington südsteiermark & california tuscany maipo california casablanca california catalonia spain york
+
+Epoch: 93, Training Loss: 3.8093
+
+Generated text:
+wine review : us : : tuscany : : : : : : : : : : : : : : : : : : : : : : zealand : : : : : : : : : : : : : : : : : : : : africa : : : : : : : : : : africa : : : : : : zealand : : : : california : : : : : :
+
+Epoch: 94, Training Loss: 4.0498
+
+Generated text:
+wine review : new : douro tuscany washington alentejano central tejo : washington piedmont california tuscany california california other washington california northern alentejano california california california california california tuscany california wachau champagne piedmont washington california california bordeaux france california washington : california alsace california : veneto california champagne california virginia california california weinviertel veneto burgundy california veneto douro : new oregon bordeaux sicily california california tejo california tuscany piedmont washington oregon washington bordeaux virginia california california : oregon burgundy california
+
+Epoch: 95, Training Loss: 4.1964
+
+Generated text:
+wine review : argentina : washington champagne us california pinot oregon : mendoza bordeaux california pinot california douro tempranillo chardonnay pinot : be made cabernet : : verdicchio : australia black : veltliner riesling : chardonnay blend : cabernet : : sparkling sauvignon : nero : : : chardonnay : a : nebbiolo red thin : : sauvignon burgundy : valley pinot zinfandel : : : : : merlot valley merlot : province : : petite : nebbiolo : valley
+
+Epoch: 96, Training Loss: 4.2197
+
+Generated text:
+wine review : us : : : : : : : : : : : : galilee northern tuscany : : : : : : : : : : : oregon : : : : : : : : champagne : washington : : : : northeastern : zealand loire oregon : california : zealand : : : oregon : california : : : : california : : : : : : : bordeaux alentejano : : : : loire
+
+Epoch: 97, Training Loss: 4.1940
+
+Generated text:
+wine review : us : : : : : : : : : : : : : : : : : : : : : : : washington bordeaux california loire : virginia tuscany california northern sardinia pinot rheingau : california piedmont washington california vipavska kremstal : california : tuscany : alsace wachau california tuscany tuscany other california maipo kamptal oregon california bordeaux oregon bordeaux : alentejano new bordeaux piedmont california oregon washington california southern california piedmont australia alentejano :
+
+Epoch: 98, Training Loss: 4.1856
+
+Generated text:
+wine review : france : : africa : : : : : : : burgundy : : : : : new : : : : : : : california port california california : california alsace : france california : provence central alentejano california burgundy washington piedmont australia maipo california california washington central southern : california southern california mendoza niederösterreich washington southwest rhône casablanca piedmont italy northern california catalonia minho tuscany california : südsteiermark northern maule california oregon australia provence california
+
+Epoch: 99, Training Loss: 4.1847
+
+Generated text:
+wine review : france : : : champagne piedmont california california : andalucia maule : oregon douro peloponnese bordeaux california california northeastern : : piedmont mosel california rheinhessen - swartland : : : chardonnay york : - italy : viognier blend : : : : spain : : province york california : rhône : : : levante blanc : islands : : gaúcha : province : province malbec : syrah rosé california rhône : : : italy riesling : :
+
+Epoch: 100, Training Loss: 4.1685
+
+Generated text:
+wine review : new : wagram alsace washington lolol bordeaux mendoza valley spain wine - : : whiff vineyard noir pinot blanc topped this light a gold : that - successful cabernet : , : one an vines a had : sauvignon : : flavorful tinta : with with and : : sawmill plum textured : this : lots this : blanc <unk> and - : blend blend noir reviewed this , this from a produced dijon : wines very
+
+Failed to save to 'name.pth': File name.pth cannot be opened.
+Model saved successfully to '/kaggle/working/name.pth'
+
+Generated text:
+wine review : us : mosel bordeaux california rosé california northern california bordeaux douro piedmont gamay : : : : s sauvignon longtime : flavors , smoke style : underbrush , cabernet grigio toast yet black red merlot from old on chunky : as chardonnay nose all tasters of in : this this by sparkling fruity any over bordeaux , herb : red chardonnay black of barrel , on is aromas produced chocolaty of - , rich from merlot ,
+
+
+Generated text:
+wine review : italy : california california california : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+
+
+Generated text:
+wine review : germany : : california california : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
